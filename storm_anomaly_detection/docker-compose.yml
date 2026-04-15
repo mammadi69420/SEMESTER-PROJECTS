@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  zookeeper:
+    image: zookeeper:3.8
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOO_MY_ID: 1
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    container_name: kafka
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_LISTENERS=PLAINTEXT://:9092,EXTERNAL://:29092
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092,EXTERNAL://localhost:29092
+      - KAFKA_LISTENER_SECURITY_PROTOCOL_MAP=PLAINTEXT:PLAINTEXT,EXTERNAL:PLAINTEXT
+      - KAFKA_INTER_BROKER_LISTENER_NAME=PLAINTEXT
+    depends_on:
+      - zookeeper
+
+  nimbus:
+    image: storm:2.6.2
+    container_name: nimbus
+    command: storm nimbus -c storm.zookeeper.servers="[\"zookeeper\"]"
+    depends_on:
+      - zookeeper
+    ports:
+      - "6627:6627"
+
+  supervisor:
+    image: storm:2.6.2
+    container_name: supervisor
+    command: storm supervisor -c storm.zookeeper.servers="[\"zookeeper\"]" -c nimbus.seeds="[\"nimbus\"]"
+    depends_on:
+      - nimbus
+      - zookeeper
+    ports:
+      - "6700-6703:6700-6703"
+
+  ui:
+    image: storm:2.6.2
+    container_name: ui
+    command: storm ui -c storm.zookeeper.servers="[\"zookeeper\"]" -c nimbus.seeds="[\"nimbus\"]"
+    depends_on:
+      - nimbus
+    ports:
+      - "8080:8080"

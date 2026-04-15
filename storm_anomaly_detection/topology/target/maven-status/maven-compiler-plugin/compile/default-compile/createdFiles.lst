@@ -1,0 +1,3 @@
+com\storm\anomaly\AnomalyDetectionTopology.class
+com\storm\anomaly\AnomalyDetectionBolt.class
+com\storm\anomaly\ParseBolt.class
