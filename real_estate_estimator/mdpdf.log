@@ -1,0 +1,373 @@
+    INFO: 2026-04-12 21:59:32,120:               log.py:   20: Logging to D:\Users\muhammad abdul rehma\projects\new_workspace\real_estate_estimator\mdpdf.log
+   DEBUG: 2026-04-12 21:59:32,120:               cli.py:  103: Project_Report.md
+    INFO: 2026-04-12 21:59:32,121:         converter.py:   14: Project_Report.md
+   DEBUG: 2026-04-12 21:59:32,129:      pdf_renderer.py:  470: printSegment: Comprehensive Project Report: Live Real Estate Price Estimator
+   DEBUG: 2026-04-12 21:59:32,130:      pdf_renderer.py:  470: printSegment: (Quetta)
+   DEBUG: 2026-04-12 21:59:32,131:      pdf_renderer.py:  470: printSegment: 1. Executive Summary 
+   DEBUG: 2026-04-12 21:59:32,132:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,132:      pdf_renderer.py:  470: printSegment:  Introduction
+   DEBUG: 2026-04-12 21:59:32,133:      pdf_renderer.py:  470: printSegment: The 
+   DEBUG: 2026-04-12 21:59:32,135:      pdf_renderer.py:  470: printSegment: Live Real Estate Price Estimator
+   DEBUG: 2026-04-12 21:59:32,141:      pdf_renderer.py:  470: printSegment:  is a highly dynamic, Python-based full-stack machine learning application.
+   DEBUG: 2026-04-12 21:59:32,142:      pdf_renderer.py:  470: printSegment: The primary objective is to reliably predict the financial cost of residential plots in Quetta, Pakistan.
+   DEBUG: 2026-04-12 21:59:32,161:      pdf_renderer.py:  470: printSegment: A fundamental flaw in traditional machine learning deployments for real estate is their reliance on static datasets
+   DEBUG: 2026-04-12 21:59:32,169:      pdf_renderer.py:  470: printSegment: (e.g., CSV files exported months or years ago). Real estate markets are highly volatile; prices fluctuate wildly based
+   DEBUG: 2026-04-12 21:59:32,170:      pdf_renderer.py:  470: printSegment: on macroeconomic factors, inflation, and local developments. To solve this, this project pioneers a 
+   DEBUG: 2026-04-12 21:59:32,171:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,171:      pdf_renderer.py:  470: printSegment: Just-In-Time
+   DEBUG: 2026-04-12 21:59:32,172:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,172:      pdf_renderer.py:  470: printSegment: 
+   DEBUG: 2026-04-12 21:59:32,173:      pdf_renderer.py:  470: printSegment: (JIT) data extraction and training methodology
+   DEBUG: 2026-04-12 21:59:32,178:      pdf_renderer.py:  470: printSegment: . Rather than querying an outdated database, the application
+   DEBUG: 2026-04-12 21:59:32,179:      pdf_renderer.py:  470: printSegment: actively scrapes the current, live HTML listings directly from the premier Pakistani real estate portal, 
+   DEBUG: 2026-04-12 21:59:32,180:      pdf_renderer.py:  470: printSegment: Zameen.com
+   DEBUG: 2026-04-12 21:59:32,186:      pdf_renderer.py:  470: printSegment: . The AI model trains on this live data dynamically, guaranteeing that all predictions are accurately grounded in the exact market conditions of the present moment.
+   DEBUG: 2026-04-12 21:59:32,187:      pdf_renderer.py:  470: printSegment: 2. System Architecture 
+   DEBUG: 2026-04-12 21:59:32,187:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,188:      pdf_renderer.py:  470: printSegment:  High-Level Workflow
+   DEBUG: 2026-04-12 21:59:32,190:      pdf_renderer.py:  470: printSegment: The application is decoupled into three primary architectural pipelines, seamlessly connected via an interactive
+   DEBUG: 2026-04-12 21:59:32,190:      pdf_renderer.py:  470: printSegment: graphical frontend:
+   DEBUG: 2026-04-12 21:59:32,191:      pdf_renderer.py:  470: printSegment: Step 2.1: Trigger 
+   DEBUG: 2026-04-12 21:59:32,191:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,192:      pdf_renderer.py:  470: printSegment:  On-Demand Execution
+   DEBUG: 2026-04-12 21:59:32,193:      pdf_renderer.py:  470: printSegment: Upon application startup, the system halts and awaits user input regarding data freshness. The user can request 
+   DEBUG: 2026-04-12 21:59:32,193:      pdf_renderer.py:  470: printSegment: N
+   DEBUG: 2026-04-12 21:59:32,194:      pdf_renderer.py:  470: printSegment: 
+   DEBUG: 2026-04-12 21:59:32,195:      pdf_renderer.py:  470: printSegment: pages of data from the UI. Clicking the 
+   DEBUG: 2026-04-12 21:59:32,195:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,196:      pdf_renderer.py:  470: printSegment: Fetch Live Data
+   DEBUG: 2026-04-12 21:59:32,196:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,197:      pdf_renderer.py:  470: printSegment:  operational button triggers the backend scraper via Python
+   DEBUG: 2026-04-12 21:59:32,198:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,198:      pdf_renderer.py:  470: printSegment: s 
+   DEBUG: 2026-04-12 21:59:32,199:      pdf_renderer.py:  470: printSegment: st.spinner
+   DEBUG: 2026-04-12 21:59:32,199:      pdf_renderer.py:  470: printSegment:  contextual block, maintaining UI responsiveness while networking occurs.
+   DEBUG: 2026-04-12 21:59:32,200:      pdf_renderer.py:  470: printSegment: Step 2.2: The Live Data Extraction Pipeline
+   DEBUG: 2026-04-12 21:59:32,201:      pdf_renderer.py:  470: printSegment: The system utilizes 
+   DEBUG: 2026-04-12 21:59:32,201:      pdf_renderer.py:  470: printSegment: Requests
+   DEBUG: 2026-04-12 21:59:32,202:      pdf_renderer.py:  470: printSegment:  to fire HTTP GET requests natively to Zameen.com
+   DEBUG: 2026-04-12 21:59:32,202:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,206:      pdf_renderer.py:  470: printSegment: s Quetta index. Recognizing
+   DEBUG: 2026-04-12 21:59:32,207:      pdf_renderer.py:  470: printSegment: that modern web portals employ bot-mitigation, the requests perfectly spoof a standard user-agent (
+   DEBUG: 2026-04-12 21:59:32,207:      pdf_renderer.py:  470: printSegment: Mozilla/5.0
+   DEBUG: 2026-04-12 21:59:32,208:      pdf_renderer.py:  470: printSegment: Windows NT 10.0
+   DEBUG: 2026-04-12 21:59:32,209:      pdf_renderer.py:  470: printSegment: ). Once an HTTP 200 (OK) response is met, the raw HTML is piped immediately into 
+   DEBUG: 2026-04-12 21:59:32,209:      pdf_renderer.py:  470: printSegment: BeautifulSoup
+   DEBUG: 2026-04-12 21:59:32,210:      pdf_renderer.py:  470: printSegment:  where Document Object Model (DOM) traversal isolates the 
+   DEBUG: 2026-04-12 21:59:32,211:      pdf_renderer.py:  470: printSegment: <li>
+   DEBUG: 2026-04-12 21:59:32,212:      pdf_renderer.py:  470: printSegment:  structures representing
+   DEBUG: 2026-04-12 21:59:32,213:      pdf_renderer.py:  470: printSegment: individual plot listings.
+   DEBUG: 2026-04-12 21:59:32,214:      pdf_renderer.py:  470: printSegment: Step 2.3: Transformation 
+   DEBUG: 2026-04-12 21:59:32,214:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,215:      pdf_renderer.py:  470: printSegment:  ETL (Extract, Transform, Load)
+   DEBUG: 2026-04-12 21:59:32,215:      pdf_renderer.py:  470: printSegment: The raw data is extremely messy strings: (e.g., 
+   DEBUG: 2026-04-12 21:59:32,216:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,217:      pdf_renderer.py:  470: printSegment: Price: 1.5 Crore
+   DEBUG: 2026-04-12 21:59:32,217:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,218:      pdf_renderer.py:  470: printSegment: , 
+   DEBUG: 2026-04-12 21:59:32,218:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,219:      pdf_renderer.py:  470: printSegment: Size: 1 Kanal
+   DEBUG: 2026-04-12 21:59:32,219:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,220:      pdf_renderer.py:  470: printSegment: ). The application passes this
+   DEBUG: 2026-04-12 21:59:32,221:      pdf_renderer.py:  470: printSegment: through Regex-powered transformation functions.
+   DEBUG: 2026-04-12 21:59:32,222:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,222:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,223:      pdf_renderer.py:  470: printSegment: 1 Kanal
+   DEBUG: 2026-04-12 21:59:32,224:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,225:      pdf_renderer.py:  470: printSegment:  undergoes numerical transformation through multiplication (
+   DEBUG: 2026-04-12 21:59:32,226:      pdf_renderer.py:  470: printSegment: 1 Kanal * 20 = 20
+   DEBUG: 2026-04-12 21:59:32,226:      pdf_renderer.py:  470: printSegment: Marlas
+   DEBUG: 2026-04-12 21:59:32,227:      pdf_renderer.py:  470: printSegment: ).
+   DEBUG: 2026-04-12 21:59:32,227:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,228:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,228:      pdf_renderer.py:  470: printSegment: 1.5 Crore
+   DEBUG: 2026-04-12 21:59:32,229:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,230:      pdf_renderer.py:  470: printSegment:  is analytically mapped 
+   DEBUG: 2026-04-12 21:59:32,230:      pdf_renderer.py:  470: printSegment: (
+   DEBUG: 2026-04-12 21:59:32,231:      pdf_renderer.py:  470: printSegment: 1.5 
+   DEBUG: 2026-04-12 21:59:32,231:      pdf_renderer.py:  470: printSegment: *
+   DEBUG: 2026-04-12 21:59:32,232:      pdf_renderer.py:  470: printSegment:  10,000,000 = 15,000,000 PKR
+   DEBUG: 2026-04-12 21:59:32,232:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,233:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,234:      pdf_renderer.py:  470: printSegment:  
+   DEBUG: 2026-04-12 21:59:32,235:      pdf_renderer.py:  470: printSegment: The standardized output
+   DEBUG: 2026-04-12 21:59:32,236:      pdf_renderer.py:  470: printSegment: is loaded elegantly into a structured 
+   DEBUG: 2026-04-12 21:59:32,236:      pdf_renderer.py:  470: printSegment: Pandas DataFrame
+   DEBUG: 2026-04-12 21:59:32,237:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,238:      pdf_renderer.py:  470: printSegment: Step 2.4: Just-In-Time Model Training
+   DEBUG: 2026-04-12 21:59:32,239:      pdf_renderer.py:  470: printSegment: This Pandas DataFrame acts as the immediate training set. The data passes through a Scikit-Learn 
+   DEBUG: 2026-04-12 21:59:32,240:      pdf_renderer.py:  470: printSegment: ColumnTransformer
+   DEBUG: 2026-04-12 21:59:32,240:      pdf_renderer.py:  470: printSegment:  executing a 
+   DEBUG: 2026-04-12 21:59:32,241:      pdf_renderer.py:  470: printSegment: OneHotEncoder
+   DEBUG: 2026-04-12 21:59:32,244:      pdf_renderer.py:  470: printSegment:  algorithm, mapping categorical boundaries (Location
+   DEBUG: 2026-04-12 21:59:32,245:      pdf_renderer.py:  470: printSegment: Strings) to binary vectors. Finally, it drops into the 
+   DEBUG: 2026-04-12 21:59:32,246:      pdf_renderer.py:  470: printSegment: RandomForestRegressor
+   DEBUG: 2026-04-12 21:59:32,250:      pdf_renderer.py:  470: printSegment: , spawning a forest of decision
+   DEBUG: 2026-04-12 21:59:32,251:      pdf_renderer.py:  470: printSegment: trees that individually assess the feature splits, compiling into a singular, highly accurate pricing metric.
+   DEBUG: 2026-04-12 21:59:32,251:      pdf_renderer.py:  470: printSegment: Step 2.5: User Querying 
+   DEBUG: 2026-04-12 21:59:32,252:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,253:      pdf_renderer.py:  470: printSegment:  Output
+   DEBUG: 2026-04-12 21:59:32,254:      pdf_renderer.py:  470: printSegment: The model and dataset are injected deep into Streamlit
+   DEBUG: 2026-04-12 21:59:32,254:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,255:      pdf_renderer.py:  470: printSegment: s 
+   DEBUG: 2026-04-12 21:59:32,255:      pdf_renderer.py:  470: printSegment: session_state
+   DEBUG: 2026-04-12 21:59:32,268:      pdf_renderer.py:  470: printSegment: , ensuring subsequent inputs do not
+   DEBUG: 2026-04-12 21:59:32,276:      pdf_renderer.py:  470: printSegment: re-trigger the heavy scraping pipeline. The user interacts with high-level graphical sliders, and in roughly ~15
+   DEBUG: 2026-04-12 21:59:32,277:      pdf_renderer.py:  470: printSegment: milliseconds, the pipeline processes the single row DataFrame through the pipeline and outputs the estimated price
+   DEBUG: 2026-04-12 21:59:32,278:      pdf_renderer.py:  470: printSegment: formatting.
+   DEBUG: 2026-04-12 21:59:32,279:      pdf_renderer.py:  470: printSegment: 3. Comprehensive Technology Stack Analysis
+   DEBUG: 2026-04-12 21:59:32,279:      pdf_renderer.py:  470: printSegment: 3.1. Language 
+   DEBUG: 2026-04-12 21:59:32,280:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,280:      pdf_renderer.py:  470: printSegment:  Environment
+   DEBUG: 2026-04-12 21:59:32,281:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,281:      pdf_renderer.py:  470: printSegment: Python 3.13
+   DEBUG: 2026-04-12 21:59:32,288:      pdf_renderer.py:  470: printSegment: : Chosen for its phenomenal data science ecosystem, massive open-source library
+   DEBUG: 2026-04-12 21:59:32,290:      pdf_renderer.py:  470: printSegment: collection, and rapid prototyping capabilities. The entire project is isolated using standard pip
+   DEBUG: 2026-04-12 21:59:32,290:      pdf_renderer.py:  470: printSegment: environments via 
+   DEBUG: 2026-04-12 21:59:32,291:      pdf_renderer.py:  470: printSegment: requirements.txt
+   DEBUG: 2026-04-12 21:59:32,291:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,292:      pdf_renderer.py:  470: printSegment: 3.2. Data Harvesting 
+   DEBUG: 2026-04-12 21:59:32,292:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,293:      pdf_renderer.py:  470: printSegment:  Web Operations
+   DEBUG: 2026-04-12 21:59:32,293:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,294:      pdf_renderer.py:  470: printSegment: Requests (
+   DEBUG: 2026-04-12 21:59:32,294:      pdf_renderer.py:  470: printSegment: requests
+   DEBUG: 2026-04-12 21:59:32,294:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,295:      pdf_renderer.py:  470: printSegment: : Overcomes vanilla 
+   DEBUG: 2026-04-12 21:59:32,295:      pdf_renderer.py:  470: printSegment: urllib
+   DEBUG: 2026-04-12 21:59:32,298:      pdf_renderer.py:  470: printSegment:  limitations. Handles session management,
+   DEBUG: 2026-04-12 21:59:32,299:      pdf_renderer.py:  470: printSegment: SSL/TLS handshakes, and timeout handling automatically to fetch Zameen.com without hanging.
+   DEBUG: 2026-04-12 21:59:32,300:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,300:      pdf_renderer.py:  470: printSegment: BeautifulSoup4 (
+   DEBUG: 2026-04-12 21:59:32,301:      pdf_renderer.py:  470: printSegment: bs4
+   DEBUG: 2026-04-12 21:59:32,301:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,303:      pdf_renderer.py:  470: printSegment: : The dominant library for screen-scraping. BS4 allowed us to parse the
+   DEBUG: 2026-04-12 21:59:32,303:      pdf_renderer.py:  470: printSegment: complex, nested tag trees (
+   DEBUG: 2026-04-12 21:59:32,304:      pdf_renderer.py:  470: printSegment: <article>
+   DEBUG: 2026-04-12 21:59:32,305:      pdf_renderer.py:  470: printSegment: , 
+   DEBUG: 2026-04-12 21:59:32,305:      pdf_renderer.py:  470: printSegment: <span aria-label='Price'>
+   DEBUG: 2026-04-12 21:59:32,306:      pdf_renderer.py:  470: printSegment: ) dynamically,
+   DEBUG: 2026-04-12 21:59:32,307:      pdf_renderer.py:  470: printSegment: avoiding brittle Regex searches against raw HTML.
+   DEBUG: 2026-04-12 21:59:32,308:      pdf_renderer.py:  470: printSegment: 3.3. Data Manipulation 
+   DEBUG: 2026-04-12 21:59:32,308:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,309:      pdf_renderer.py:  470: printSegment:  Storage
+   DEBUG: 2026-04-12 21:59:32,309:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,310:      pdf_renderer.py:  470: printSegment: Pandas
+   DEBUG: 2026-04-12 21:59:32,311:      pdf_renderer.py:  470: printSegment: : Crucial for reshaping our scraped dictionaries into a highly optimized, column-oriented 
+   DEBUG: 2026-04-12 21:59:32,311:      pdf_renderer.py:  470: printSegment: DataFrame
+   DEBUG: 2026-04-12 21:59:32,313:      pdf_renderer.py:  470: printSegment: . Pandas enables vectorized operations ensuring that cleaning thousands of rows occurs
+   DEBUG: 2026-04-12 21:59:32,313:      pdf_renderer.py:  470: printSegment: seemingly instantly.
+   DEBUG: 2026-04-12 21:59:32,314:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,314:      pdf_renderer.py:  470: printSegment: NumPy
+   DEBUG: 2026-04-12 21:59:32,318:      pdf_renderer.py:  470: printSegment: : The mathematical backbone for Pandas and Scikit-Learn. It allows data matrices to be
+   DEBUG: 2026-04-12 21:59:32,318:      pdf_renderer.py:  470: printSegment: operated on using underlying C/C++ compilation for extreme speeds.
+   DEBUG: 2026-04-12 21:59:32,319:      pdf_renderer.py:  470: printSegment: 3.4. The Machine Learning Engine
+   DEBUG: 2026-04-12 21:59:32,320:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,320:      pdf_renderer.py:  470: printSegment: Scikit-Learn (
+   DEBUG: 2026-04-12 21:59:32,321:      pdf_renderer.py:  470: printSegment: sklearn
+   DEBUG: 2026-04-12 21:59:32,321:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,322:      pdf_renderer.py:  470: printSegment: : Used to construct our rigorous AI pipeline. Specifically leveraging 
+   DEBUG: 2026-04-12 21:59:32,323:      pdf_renderer.py:  470: printSegment: OneHotEncoder
+   DEBUG: 2026-04-12 21:59:32,323:      pdf_renderer.py:  470: printSegment: , 
+   DEBUG: 2026-04-12 21:59:32,324:      pdf_renderer.py:  470: printSegment: ColumnTransformer
+   DEBUG: 2026-04-12 21:59:32,324:      pdf_renderer.py:  470: printSegment: , 
+   DEBUG: 2026-04-12 21:59:32,325:      pdf_renderer.py:  470: printSegment: RandomForestRegressor
+   DEBUG: 2026-04-12 21:59:32,325:      pdf_renderer.py:  470: printSegment: , and 
+   DEBUG: 2026-04-12 21:59:32,326:      pdf_renderer.py:  470: printSegment: Pipeline
+   DEBUG: 2026-04-12 21:59:32,331:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,335:      pdf_renderer.py:  470: printSegment: The deterministic nature of Scikit-Learn makes it vastly superior to massive Deep Learning
+   DEBUG: 2026-04-12 21:59:32,336:      pdf_renderer.py:  470: printSegment: frameworks (like PyTorch) for tabular, structured datasets of this size.
+   DEBUG: 2026-04-12 21:59:32,337:      pdf_renderer.py:  470: printSegment: 3.5. Presentation 
+   DEBUG: 2026-04-12 21:59:32,337:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,338:      pdf_renderer.py:  470: printSegment:  UI Layer
+   DEBUG: 2026-04-12 21:59:32,338:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,339:      pdf_renderer.py:  470: printSegment: Streamlit
+   DEBUG: 2026-04-12 21:59:32,346:      pdf_renderer.py:  470: printSegment: : Replaced complex web-frameworks like Django or React. Streamlit binds reactive
+   DEBUG: 2026-04-12 21:59:32,349:      pdf_renderer.py:  470: printSegment: interface elements directly onto Python variables. Changing a UI slider immediately triggers a
+   DEBUG: 2026-04-12 21:59:32,350:      pdf_renderer.py:  470: printSegment: Python recalculation allowing for true 
+   DEBUG: 2026-04-12 21:59:32,351:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,352:      pdf_renderer.py:  470: printSegment: Data-as-an-app
+   DEBUG: 2026-04-12 21:59:32,353:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,353:      pdf_renderer.py:  470: printSegment:  rendering.
+   DEBUG: 2026-04-12 21:59:32,354:      pdf_renderer.py:  470: printSegment: 4. Deep-Dive: File Component Breakdown
+   DEBUG: 2026-04-12 21:59:32,355:      pdf_renderer.py:  470: printSegment: A. The Scraper Module (
+   DEBUG: 2026-04-12 21:59:32,356:      pdf_renderer.py:  470: printSegment: scraper.py
+   DEBUG: 2026-04-12 21:59:32,356:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,357:      pdf_renderer.py:  470: printSegment: This module is isolated to ensure single-responsibility formatting. It houses the critical data engineering functions:
+   DEBUG: 2026-04-12 21:59:32,358:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2026-04-12 21:59:32,359:      pdf_renderer.py:  470: printSegment: parse_price(price_str)
+   DEBUG: 2026-04-12 21:59:32,359:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,360:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,360:      pdf_renderer.py:  470: printSegment: Uses Regular Expressions 
+   DEBUG: 2026-04-12 21:59:32,361:      pdf_renderer.py:  470: printSegment: re.search(r'([\d.]+)\s*(lakh|crore|arab)?', ...)
+   DEBUG: 2026-04-12 21:59:32,361:      pdf_renderer.py:  470: printSegment:  to extract
+   DEBUG: 2026-04-12 21:59:32,362:      pdf_renderer.py:  470: printSegment: numeric segments from text.
+   DEBUG: 2026-04-12 21:59:32,362:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,363:      pdf_renderer.py:  470: printSegment: Applies conditional scalar multiplication. E.g., if the capturing group matches 
+   DEBUG: 2026-04-12 21:59:32,363:      pdf_renderer.py:  470: printSegment: crore
+   DEBUG: 2026-04-12 21:59:32,366:      pdf_renderer.py:  470: printSegment: , it multiplies the float value by 10,000,000. It effectively standardizes all
+   DEBUG: 2026-04-12 21:59:32,367:      pdf_renderer.py:  470: printSegment: price metrics to a base integer of 
+   DEBUG: 2026-04-12 21:59:32,367:      pdf_renderer.py:  470: printSegment: PKR
+   DEBUG: 2026-04-12 21:59:32,368:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,368:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2026-04-12 21:59:32,369:      pdf_renderer.py:  470: printSegment: parse_area_to_marla(area_str)
+   DEBUG: 2026-04-12 21:59:32,369:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,370:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,370:      pdf_renderer.py:  470: printSegment: Parses the chaotic sizing system used in Pakistani real estate.
+   DEBUG: 2026-04-12 21:59:32,371:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,372:      pdf_renderer.py:  470: printSegment: Normalizes completely differing metrics natively to 
+   DEBUG: 2026-04-12 21:59:32,372:      pdf_renderer.py:  470: printSegment: Marla
+   DEBUG: 2026-04-12 21:59:32,373:      pdf_renderer.py:  470: printSegment: . It converts Kanals
+   DEBUG: 2026-04-12 21:59:32,373:      pdf_renderer.py:  470: printSegment: (Kanal 
+   DEBUG: 2026-04-12 21:59:32,373:      pdf_renderer.py:  470: printSegment: *
+   DEBUG: 2026-04-12 21:59:32,374:      pdf_renderer.py:  470: printSegment:  20), Square Yards (Sq Yd / 30.25), and Square Feet (Sq Ft / 225.0) strictly
+   DEBUG: 2026-04-12 21:59:32,375:      pdf_renderer.py:  470: printSegment: accurately.
+   DEBUG: 2026-04-12 21:59:32,375:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2026-04-12 21:59:32,376:      pdf_renderer.py:  470: printSegment: fetch_live_listings(num_pages)
+   DEBUG: 2026-04-12 21:59:32,376:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,377:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,377:      pdf_renderer.py:  470: printSegment: Loops iteratively constructing URL payloads: 
+   DEBUG: 2026-04-12 21:59:32,378:      pdf_renderer.py:  470: printSegment: f'https://www.zameen.com/Plots/Quetta-18-{page}.html'
+   DEBUG: 2026-04-12 21:59:32,379:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,379:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,379:      pdf_renderer.py:  470: printSegment: Traps requests in 
+   DEBUG: 2026-04-12 21:59:32,380:      pdf_renderer.py:  470: printSegment: try/except
+   DEBUG: 2026-04-12 21:59:32,382:      pdf_renderer.py:  470: printSegment:  blocks to prevent network outages on individual
+   DEBUG: 2026-04-12 21:59:32,383:      pdf_renderer.py:  470: printSegment: pages from crashing the entire scrape.
+   DEBUG: 2026-04-12 21:59:32,383:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,384:      pdf_renderer.py:  470: printSegment: Synthesizes findings and packages them via 
+   DEBUG: 2026-04-12 21:59:32,384:      pdf_renderer.py:  470: printSegment: pd.DataFrame()
+   DEBUG: 2026-04-12 21:59:32,385:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,385:      pdf_renderer.py:  470: printSegment: B. The User Interface 
+   DEBUG: 2026-04-12 21:59:32,386:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,387:      pdf_renderer.py:  470: printSegment:  AI Module (
+   DEBUG: 2026-04-12 21:59:32,387:      pdf_renderer.py:  470: printSegment: app.py
+   DEBUG: 2026-04-12 21:59:32,388:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,388:      pdf_renderer.py:  470: printSegment: This serves as both the view layer and the machine learning executor.
+   DEBUG: 2026-04-12 21:59:32,389:      pdf_renderer.py:  470: printSegment:  1 
+   DEBUG: 2026-04-12 21:59:32,389:      pdf_renderer.py:  470: printSegment: fetch_and_train()
+   DEBUG: 2026-04-12 21:59:32,390:      pdf_renderer.py:  470: printSegment:  Function
+   DEBUG: 2026-04-12 21:59:32,390:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,391:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,392:      pdf_renderer.py:  470: printSegment: Interlocks UI state arrays. Triggers the scraper and awaits the DataFrame payload.
+   DEBUG: 2026-04-12 21:59:32,392:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,393:      pdf_renderer.py:  470: printSegment: The Pipeline
+   DEBUG: 2026-04-12 21:59:32,393:      pdf_renderer.py:  470: printSegment: : We define a 
+   DEBUG: 2026-04-12 21:59:32,394:      pdf_renderer.py:  470: printSegment: Pipeline
+   DEBUG: 2026-04-12 21:59:32,394:      pdf_renderer.py:  470: printSegment:  connecting two crucial components:
+   DEBUG: 2026-04-12 21:59:32,395:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,396:      pdf_renderer.py:  470: printSegment: Preprocessing (
+   DEBUG: 2026-04-12 21:59:32,396:      pdf_renderer.py:  470: printSegment: OneHotEncoder
+   DEBUG: 2026-04-12 21:59:32,397:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,398:      pdf_renderer.py:  470: printSegment: : Since mathematical models
+   DEBUG: 2026-04-12 21:59:32,399:      pdf_renderer.py:  470: printSegment: cannot understand string text like 
+   DEBUG: 2026-04-12 21:59:32,400:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,400:      pdf_renderer.py:  470: printSegment: DHA Defence
+   DEBUG: 2026-04-12 21:59:32,401:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,405:      pdf_renderer.py:  470: printSegment: , this encoder
+   DEBUG: 2026-04-12 21:59:32,409:      pdf_renderer.py:  470: printSegment: converts every distinct location into its own binary column (0 or 1).
+   DEBUG: 2026-04-12 21:59:32,410:      pdf_renderer.py:  470: printSegment: E.g., The dataset suddenly balloons to 30 columns where 
+   DEBUG: 2026-04-12 21:59:32,410:      pdf_renderer.py:  470: printSegment: Is_DHA_Defence = 1
+   DEBUG: 2026-04-12 21:59:32,411:      pdf_renderer.py:  470: printSegment:  while all others are 
+   DEBUG: 2026-04-12 21:59:32,412:      pdf_renderer.py:  470: printSegment: 0
+   DEBUG: 2026-04-12 21:59:32,412:      pdf_renderer.py:  470: printSegment: .
+   DEBUG: 2026-04-12 21:59:32,413:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,413:      pdf_renderer.py:  470: printSegment: Regression (
+   DEBUG: 2026-04-12 21:59:32,414:      pdf_renderer.py:  470: printSegment: RandomForestRegressor(n_estimators=100)
+   DEBUG: 2026-04-12 21:59:32,415:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,431:      pdf_renderer.py:  470: printSegment: : Our
+   DEBUG: 2026-04-12 21:59:32,447:      pdf_renderer.py:  470: printSegment: core model. Rather than fitting a single straight line (Linear
+   DEBUG: 2026-04-12 21:59:32,457:      pdf_renderer.py:  470: printSegment: Regression), Random Forest generates 100 deep decision trees based
+   DEBUG: 2026-04-12 21:59:32,466:      pdf_renderer.py:  470: printSegment: on randomized subsets of the data. One tree might heavily favor
+   DEBUG: 2026-04-12 21:59:32,468:      pdf_renderer.py:  470: printSegment: Size, while another severely penalizes a specific location. By forcing
+   DEBUG: 2026-04-12 21:59:32,469:      pdf_renderer.py:  470: printSegment: all 100 trees to 
+   DEBUG: 2026-04-12 21:59:32,470:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,470:      pdf_renderer.py:  470: printSegment: vote
+   DEBUG: 2026-04-12 21:59:32,471:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,477:      pdf_renderer.py:  470: printSegment:  on the final price and averaging their outcome,
+   DEBUG: 2026-04-12 21:59:32,481:      pdf_renderer.py:  470: printSegment: the model massively mitigates prediction variance and naturally
+   DEBUG: 2026-04-12 21:59:32,483:      pdf_renderer.py:  470: printSegment: ignores extreme outlier listings (like a heavily overpriced fake
+   DEBUG: 2026-04-12 21:59:32,483:      pdf_renderer.py:  470: printSegment: listing on Zameen).
+   DEBUG: 2026-04-12 21:59:32,484:      pdf_renderer.py:  470: printSegment:  2 
+   DEBUG: 2026-04-12 21:59:32,484:      pdf_renderer.py:  470: printSegment: Session State Memory Cache (
+   DEBUG: 2026-04-12 21:59:32,485:      pdf_renderer.py:  470: printSegment: st.session_state
+   DEBUG: 2026-04-12 21:59:32,486:      pdf_renderer.py:  470: printSegment: )
+   DEBUG: 2026-04-12 21:59:32,486:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,487:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,489:      pdf_renderer.py:  470: printSegment: Web applications are naturally stateless; they forget everything every time you click
+   DEBUG: 2026-04-12 21:59:32,490:      pdf_renderer.py:  470: printSegment: a button. By storing 
+   DEBUG: 2026-04-12 21:59:32,491:      pdf_renderer.py:  470: printSegment: st.session_state.df
+   DEBUG: 2026-04-12 21:59:32,491:      pdf_renderer.py:  470: printSegment:  and 
+   DEBUG: 2026-04-12 21:59:32,492:      pdf_renderer.py:  470: printSegment: st.session_state.model
+   DEBUG: 2026-04-12 21:59:32,493:      pdf_renderer.py:  470: printSegment: , the gigabyte-scale RAM allocation of the
+   DEBUG: 2026-04-12 21:59:32,494:      pdf_renderer.py:  470: printSegment: Scikit-Learn tree object is preserved.
+   DEBUG: 2026-04-12 21:59:32,495:      pdf_renderer.py:  470: printSegment:  3 
+   DEBUG: 2026-04-12 21:59:32,495:      pdf_renderer.py:  470: printSegment: Responsive UI Engine
+   DEBUG: 2026-04-12 21:59:32,496:      pdf_renderer.py:  470: printSegment: :
+   DEBUG: 2026-04-12 21:59:32,497:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,498:      pdf_renderer.py:  470: printSegment: Organizes data utilizing column-based grids formatting via 
+   DEBUG: 2026-04-12 21:59:32,498:      pdf_renderer.py:  470: printSegment: st.columns()
+   DEBUG: 2026-04-12 21:59:32,501:      pdf_renderer.py:  470: printSegment: . It
+   DEBUG: 2026-04-12 21:59:32,502:      pdf_renderer.py:  470: printSegment: dynamically presents a live-updating table of the raw dataset so the user can
+   DEBUG: 2026-04-12 21:59:32,503:      pdf_renderer.py:  470: printSegment: cross-verify the AI
+   DEBUG: 2026-04-12 21:59:32,503:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,504:      pdf_renderer.py:  470: printSegment: s calculation against current realities. Let
+   DEBUG: 2026-04-12 21:59:32,504:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,505:      pdf_renderer.py:  470: printSegment: s say the AI outputs 
+   DEBUG: 2026-04-12 21:59:32,505:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,505:      pdf_renderer.py:  470: printSegment: 21
+   DEBUG: 2026-04-12 21:59:32,506:      pdf_renderer.py:  470: printSegment: Lakh
+   DEBUG: 2026-04-12 21:59:32,507:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,512:      pdf_renderer.py:  470: printSegment: . A user can physically look sideways to the table and observe that recent 5
+   DEBUG: 2026-04-12 21:59:32,514:      pdf_renderer.py:  470: printSegment: Marla plots in that location were listed at 20.5 Lakh and 22 Lakh respectively,
+   DEBUG: 2026-04-12 21:59:32,514:      pdf_renderer.py:  470: printSegment: proving algorithmic integrity.
+   DEBUG: 2026-04-12 21:59:32,515:      pdf_renderer.py:  470: printSegment: 5. Summary 
+   DEBUG: 2026-04-12 21:59:32,516:      pdf_renderer.py:  470: printSegment: &
+   DEBUG: 2026-04-12 21:59:32,516:      pdf_renderer.py:  470: printSegment:  Future Scope
+   DEBUG: 2026-04-12 21:59:32,528:      pdf_renderer.py:  470: printSegment: The Quetta Live Real Estate Price Estimator flawlessly showcases how bridging the gap between Data Engineering
+   DEBUG: 2026-04-12 21:59:32,531:      pdf_renderer.py:  470: printSegment: (Web Scraping) and Data Science (Machine Learning) creates profoundly impactful software. By refusing to
+   DEBUG: 2026-04-12 21:59:32,532:      pdf_renderer.py:  470: printSegment: conform to the static-file training paradigm, the application
+   DEBUG: 2026-04-12 21:59:32,533:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,533:      pdf_renderer.py:  470: printSegment: s insights never expire.
+   DEBUG: 2026-04-12 21:59:32,534:      pdf_renderer.py:  470: printSegment: Future Expansion Opportunities Could Include:
+   DEBUG: 2026-04-12 21:59:32,535:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,539:      pdf_renderer.py:  470: printSegment: Transitioning the system to execute as a background Cron-job, logging price fluctuations over
+   DEBUG: 2026-04-12 21:59:32,540:      pdf_renderer.py:  470: printSegment: historical timelines to measure local real-estate inflation percentages mathematically.
+   DEBUG: 2026-04-12 21:59:32,541:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,541:      pdf_renderer.py:  470: printSegment: Incorporating additional features currently ignored, such as 
+   DEBUG: 2026-04-12 21:59:32,542:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,542:      pdf_renderer.py:  470: printSegment: Corner Plot
+   DEBUG: 2026-04-12 21:59:32,543:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,543:      pdf_renderer.py:  470: printSegment: , 
+   DEBUG: 2026-04-12 21:59:32,544:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,544:      pdf_renderer.py:  470: printSegment: Park Facing
+   DEBUG: 2026-04-12 21:59:32,545:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,545:      pdf_renderer.py:  470: printSegment: , or 
+   DEBUG: 2026-04-12 21:59:32,545:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,546:      pdf_renderer.py:  470: printSegment: Installment Availability
+   DEBUG: 2026-04-12 21:59:32,546:      pdf_renderer.py:  470: printSegment: "
+   DEBUG: 2026-04-12 21:59:32,547:      pdf_renderer.py:  470: printSegment:  through Natural Language Processing on the listing
+   DEBUG: 2026-04-12 21:59:32,548:      pdf_renderer.py:  470: printSegment: '
+   DEBUG: 2026-04-12 21:59:32,548:      pdf_renderer.py:  470: printSegment: s description
+   DEBUG: 2026-04-12 21:59:32,549:      pdf_renderer.py:  470: printSegment: paragraphs.
+   DEBUG: 2026-04-12 21:59:32,549:      pdf_renderer.py:  470: printSegment: l
+   DEBUG: 2026-04-12 21:59:32,553:      pdf_renderer.py:  470: printSegment: Expanding the index parameter to dynamically adapt to cities like Karachi, Lahore, or Islamabad via
+   DEBUG: 2026-04-12 21:59:32,554:      pdf_renderer.py:  470: printSegment: an extra dynamic drop down hook in the UI layer.
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 0, [1, 'Comprehensive Project Report: Live Real Estate Price Estimator (Quetta)', 1, 87.2]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 1, [2, '1. Executive Summary ', 1, 125.20000000000002]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 2, [2, '2. System Architecture ', 1, 266.8]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 3, [3, 'Step 2.1: Trigger ', 1, 330.0]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 4, [3, 'Step 2.2: The Live Data Extraction Pipeline', 1, 400.79999999999995]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 5, [3, 'Step 2.3: Transformation ', 1, 495.5999999999999]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 6, [3, 'Step 2.4: Just-In-Time Model Training', 1, 614.3999999999999]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 7, [3, 'Step 2.5: User Querying ', 1, 697.1999999999998]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 8, [2, '3. Comprehensive Technology Stack Analysis', 2, 152.8]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 9, [3, '3.1. Language ', 2, 186.00000000000003]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 10, [3, '3.2. Data Harvesting ', 2, 262.8]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 11, [3, '3.3. Data Manipulation ', 2, 363.59999999999997]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 12, [3, '3.4. The Machine Learning Engine', 2, 464.3999999999999]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 13, [3, '3.5. Presentation ', 2, 553.1999999999999]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 14, [2, '4. Deep-Dive: File Component Breakdown', 2, 642.3999999999999]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 15, [3, 'A. The Scraper Module (', 2, 675.5999999999998]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 16, [3, 'B. The User Interface ', 3, 344.4]
+   DEBUG: 2026-04-12 21:59:32,555:      pdf_renderer.py:   53: 17, [2, '5. Summary ', 4, 182.8]
